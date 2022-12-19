@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    background-color: #353535;
+    color: #fff;
+    display: flex;
+}
+
+.main {
+    
+    height: 500px;
+}
+
+.background {
+    position: absolute;
+    color: white;
+    font-size: 500px;
+    z-index: -1;
+    filter: opacity(0.1);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: bg 5s infinite;
+}
+
+ul {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+
+    text-transform: uppercase;
+    transition: .6s;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+
+li:hover {
+    background: orange;
+    padding: 5px;
+    color: #353535;
+}
+
+.icon {
+    margin: 2px;
+}
+
+.title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 25px;
+}
+
+
+/*                  CONTACT                  */
+
+
+.contact{
+    color: #353535;
+    padding: 20px;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+.con{
+    color: green;
+    
+}
+#discord{
+    color: #5561f5;
+}
+#github{
+    color: black;
+}
+#youtube{
+    color: red;
+}
+#youtube , #github , #discord{
+    font-size: 24px;
+    margin: 4px;
+}
+/*                  CONTACT-END                  */
+
+@keyframes bg {
+    50% {
+        filter: opacity(0.3);
+    }
+
+
+}
